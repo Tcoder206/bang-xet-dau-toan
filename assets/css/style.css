@@ -1,0 +1,137 @@
+*{
+	box-sizing: inherit;
+}
+html{
+	font-size: 62.5%;
+	line-height: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+html,head,body,div.main,div.container{height:100%;width:100%;}
+.hide{
+  display:none !important;
+}
+.main{
+  background:linear-gradient(45deg, lightblue, rgba(25,255,250,0.3))  
+}
+.container__body{background:white}
+.container{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+}
+.container__body{
+  text-align: center;
+  padding: 45px 75px;
+  display:inline-flex;
+  flex-direction:column;
+  border: 5px solid #ccc;
+  border-radius: 15px;
+  gap: 15px;
+}
+.container__table-body{
+  display:inline-table;
+  min-width: 300px;
+  font-size:1.8rem;
+}
+.container__table-body,
+.container__table-body tr td{
+  border: 1px solid black;
+  border-spacing: 0;
+}
+.container__table-body tr td{
+  padding:10px 5px;
+  text-align:center;
+}
+.container__table-body tr{
+  width: 100%;
+}
+.table__row-0>td:last-child>div{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  justify-content: space-around;
+  gap: 20px;
+}
+.table__row-0>td:last-child>div>span{
+  padding: 0 10px;
+  line-height:1.1;
+  font-size: 2.5rem;
+}
+.table__row--add-value{
+  padding: 0 10px;
+}
+.table__row--add-value>span{
+  opacity: 0.3;
+  color: white;
+  font-weight: 400;
+  background: silver;
+  border-radius: 15px;
+  padding: 0 5px;
+  line-height:1.5;
+}
+.table__row--add-value>span:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.table__row-0--input{
+  display: flex;
+  gap: 30px;
+  padding: 0 10px;
+  margin-left: 68px;
+}
+.table__hidden-field{
+  position: absolute;
+  min-width: 25px;
+  height: 0;
+  overflow: hidden;
+  white-space: pre;
+}
+.table__input-field{
+  min-width: 25px;
+  width: 25px;
+  border: 1px solid #333;
+  outline: none;
+  text-align:center;
+  line-height:1.2;
+}
+.table__row-created{
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+}
+.table__row-solutionX>div>select,
+.table__row-solutionX>div>select>options{
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  width: 20px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 2rem;
+}
+.table__row-solutionX{
+  display:flex;
+  gap: 5px;
+}
+.container__tools{
+  display:inline-flex;
+  gap: 5px;
+  justify-content:center;
+}
+.btn{
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align:center;
+}
+.removeBorder{
+  border: none !important;
+  pointer-events: none;
+}
+.btn--disabled{
+  opacity: 0.5;
+  user-select: none;
+  -webkit-user-select:none;
+  pointer-events: none;
+}
