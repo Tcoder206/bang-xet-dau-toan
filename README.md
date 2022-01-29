@@ -1,5 +1,6 @@
 # First Order Binomial - Table Generator for students
 ***P/s: This website is in development***
+
 -> __Features:__
 - Lock/Unlock table value
 - Create inputs or rows
